@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+	<servlet>
+		<servlet-name>LocationFinderAppengine</servlet-name>
+		<servlet-class>com.locationFinder.appengine.LocationFinderAppengineServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LocationFinderAppengine</servlet-name>
+		<url-pattern>/locationfinderappengine</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+       <servlet-name>storelocation</servlet-name>
+       <servlet-class>com.locationFinder.appengine.util.StoreLocationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>storelocation</servlet-name>
+       <url-pattern>/storelocation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>fetchlocation</servlet-name>
+       <servlet-class>com.locationFinder.appengine.util.FetchLocationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>fetchlocation</servlet-name>
+       <url-pattern>/fetchlocation</url-pattern>
+    </servlet-mapping>
+</web-app>

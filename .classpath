@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/hibernate-webcrawler"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/William/.m2/repository/javax/servlet/servlet-api/3.0-alpha-1/servlet-api-3.0-alpha-1.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="javax.servlet"/>
+			<attribute name="maven.artifactId" value="servlet-api"/>
+			<attribute name="maven.version" value="3.0-alpha-1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
